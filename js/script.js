@@ -11,11 +11,11 @@ skills.forEach((skill)=>{
 });
 
 
-// window.addEventListener("load", vanish);
-// function vanish() {
-//   let preLoader = document.querySelector(".preloader");
-//   preLoader.classList.add("disappear");
-// }
+ window.addEventListener("load", vanish);
+ function vanish() {
+   let preLoader = document.querySelector(".preloader");
+   preLoader.classList.add("disappear");
+ }
 let span = document.querySelector(".up");
 let nav =document.querySelector(".navbar");
 let elem = document.querySelector(".loader");
