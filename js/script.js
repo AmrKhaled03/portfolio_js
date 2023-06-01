@@ -3,6 +3,11 @@
 
 
 
+
+// start skills
+
+
+
 const skills=document.querySelectorAll(".skill small");
 
  
@@ -11,11 +16,11 @@ skills.forEach((skill)=>{
 });
 
 
- window.addEventListener("load", vanish);
- function vanish() {
-   let preLoader = document.querySelector(".preloader");
-   preLoader.classList.add("disappear");
- }
+window.addEventListener("load", vanish);
+function vanish() {
+  let preLoader = document.querySelector(".preloader");
+  preLoader.classList.add("disappear");
+}
 let span = document.querySelector(".up");
 let nav =document.querySelector(".navbar");
 let elem = document.querySelector(".loader");
@@ -62,7 +67,7 @@ let dark=document.querySelector(".icon");
 
 let tgs=document.querySelector(".mean");
 let specials=document.querySelectorAll(".special");
-
+let lis =document.querySelectorAll("li span");
 
 function chanCol(){
   document.body.classList.toggle("active");
@@ -71,6 +76,9 @@ function chanCol(){
   dark.classList.toggle("fa-moon");
 specials.forEach(special => {
   special.style.color="white";
+});
+lis.forEach(li => {
+  li.style.color="white";
 });
 }
 let colors=document.querySelector(".color-switcher")
